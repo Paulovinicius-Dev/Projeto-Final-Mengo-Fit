@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MengoFit Gym | Aumente Seu Poder</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>MengoFit Gym 💪</h1>
+            <p class="pos-cabecalho">Seu caminho para a forma física começa aqui!</p>
+        </div>
+        
+        <nav id="navegacao">
+            <ul>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#calculadora">Calculadora IMC</a></li>
+                <li><a href="#video">Treinos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+        <div class="carousel-slide">
+            <img src="Imagens/1x/banner_1.png" alt="Aumente Seu Poder com a MengoFit" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="Imagens/1x/banner_2.png" alt="Aulas em Grupo MengoFit" loading="lazy">
+        </div>
+        <div class="carousel-slide">
+            <img src="Imagens/1x/Banner_3.png" alt="Planos Premium MengoFit" loading="lazy">
+        </div>
+    </div>
+    
+    <div class="carousel-dots" id="carouselDots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+    </div>
+</div>
+
+    <main>
+        
+        <div class="container">
+            
+            <section id="planos" class="secao-principal">
+                <h2>Bem-vindo à MengoFit!</h2>
+                
+                <h3 id="video">Nossos Treinos (Vídeo)</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eApINgrw2I4?si=3aFUFXCHJOfVy5Iy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                </div>
+
+                <h3>Nossos Planos</h3>
+                
+                <article class="plano-card">
+                    <h4>Plano Básico - R$ 99,90/mês</h4>
+                    <p>Acesso total à área de musculação e vestiários.</p>
+                </article>
+
+                <article class="plano-card">
+                    <h4>Plano Plus - R$ 139,90/mês</h4>
+                    <p>Inclui Acesso Total + Todas as aulas em grupo (Yoga, Spinning, Boxe).</p>
+                </article>
+
+                <article class="plano-card">
+                    <h4>Plano Premium - R$ 199,90/mês</h4>
+                    <p>Inclui Plano Plus + uma sessão semanal com Personal Trainer e acesso VIP aos vestiários.</p>
+                </article>
+                
+                <figure class="planos-figure">
+                    <img src="Imagens/1x/hatha-yoga.jpg" alt="Aula de Yoga na MengoFit" loading="lazy">
+                    <figcaption>Turmas de Yoga e Pilates disponíveis no Plano Plus e Premium.</figcaption>
+                </figure>
+            </section>
+
+            <aside id="calculadora" class="calculadora">
+                <h2>Calculadora de IMC 📊</h2>
+                <p>Descubra se seu peso está adequado à sua altura e comece seu plano nutricional.</p>
+                
+                <form id="formIMC">
+                    
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso" step="0.1" min="1" required>
+
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" name="altura" step="0.01" min="0.5" required>
+
+                    <label for="objetivo">Seu Objetivo Principal:</label>
+                    <select id="objetivo" name="objetivo" required>
+                        <option value="">Selecione um objetivo</option>
+                        <option value="perder">Perder Peso</option>
+                        <option value="ganhar">Ganhar Massa Muscular</option>
+                        <option value="saude">Saúde e Bem-Estar</option>
+                    </select>
+                    
+                    <button type="submit">Calcular IMC</button>
+                </form>
+
+                <div id="resultadoIMC" class="resultado-box">
+                    Seu IMC aparecerá aqui.
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <p>MengoFit Gym - Treine com Poder!</p>
+            
+            <p class="contato-info">
+                ☎️ Telefone: <a href="tel:+556133334444">(61) 3333-4444</a> | 
+                📧 Email: <a href="mailto:contato@mengofit.com.br">contato@mengofit.com.br</a>
+            </p>
+            
+            <p>Endereço: Setor de Clubes Esportivos Sul, Trecho 2, Lote 1 - Brasília, DF</p>
+            
+            <p class="copyright">&copy; 2025 MengoFit. Todos os direitos reservados.</p>
+            
+            <p class="desenvolvedor">Desenvolvido por: **Guilherme Vieira** e **Paulo Vinícius**</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
