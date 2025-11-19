@@ -349,25 +349,23 @@ footer#contato {
     }
 }
 
-/* Estilos do Carrossel (Ajuste para garantir o preenchimento) */
+/* Estilos do Carrossel */
 
 .carousel-container {
     width: 100%;
     overflow: hidden; 
     position: relative; 
     border-top: 4px solid var(--cor-secundaria);
-    
-    /* 1. AUMENTE ESTE VALOR para notebooks/desktops */
-    height: 450px; /* Ou 500px, dependendo de como as imagens ficam melhores */
+    height: 500px; 
 }
 
 .carousel-track {
     display: flex; 
     transition: transform 0.5s ease-in-out; 
     width: 100%; 
-    height: 100%; /* Ocupa 100% da altura do container */
-    padding: 0; /* Removendo qualquer padding indesejado */
-    margin: 0; /* Removendo qualquer margem indesejada */
+    height: 100%; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .carousel-slide {
@@ -375,14 +373,11 @@ footer#contato {
     box-sizing: border-box;
     flex-shrink: 0; 
     position: relative; 
-    
-    /* Voltamos a usar 100% da altura do pai (o container) */
     height: 100%;
-    padding: 0; /* Certifica que não há padding */
+    padding: 0;
 }
 
 .carousel-slide img {
-    /* Mantido: Preenche 100% da área do slide sem distorcer, cortando o excesso */
     position: absolute;
     top: 0;
     left: 0;
@@ -391,11 +386,16 @@ footer#contato {
     display: block;
     object-fit: cover; 
 }
+/* Ajuste para responsividade em telas maiores */
+@media (min-width: 1440px) {
+    .carousel-container {
+        height: 760px; 
+    }
+}
 
-/* Media Query para ajuste em dispositivos móveis (Celulares) */
+/* Ajuste para responsividade em telsa menores (Celulares) */
 @media (max-width: 600px) {
     .carousel-container {
-        /* A altura para celular (200px) deve permanecer, pois você disse que ficou bom. */
         height: 200px; 
     }
 }
