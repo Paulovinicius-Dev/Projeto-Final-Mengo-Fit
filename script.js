@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     
-    // FUNCIONALIDADE DO CARROSSEL (SLIDER)
+    // Funcionalidade do carrossel 
     
     const track = document.getElementById('carouselTrack');
     if (track) {
