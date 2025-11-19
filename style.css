@@ -349,30 +349,32 @@ footer#contato {
     }
 }
 
-/* Estilos do Carrossel */
+/* Estilos do Carrossel (Correção de Proporção) */
 
 .carousel-container {
     width: 100%;
     overflow: hidden; 
     position: relative;
     border-top: 4px solid var(--cor-secundaria);
-    height: 400px;
 }
 
 .carousel-track {
     display: flex; 
     transition: transform 0.5s ease-in-out; 
-    height: 100%; 
 }
 
 .carousel-slide {
     min-width: 100%; 
     box-sizing: border-box;
     flex-shrink: 0; 
-    height: 100%; 
+    position: relative; 
+    padding-top: 45%; 
 }
 
 .carousel-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%; 
     display: block;
@@ -380,10 +382,10 @@ footer#contato {
 }
 
 
-/* Ajuste pra a tela do celular para n ficar desproporcional */
+/* Ajuste para responsividade em telas menores (Celulares) */
 @media (max-width: 600px) {
-    .carousel-container {
-        height: 200px; 
+    .carousel-slide {
+        padding-top: 35%; 
     }
 }
 
