@@ -1,11 +1,12 @@
-/* Variáveis para padronização de cores */
+/* Cores do site  */
+
 :root {
-    --cor-principal: #000000; /* Preto (Fundo do Cabeçalho e Rodapé) */
-    --cor-secundaria: #FF0000; /* Vermelho Puro (Destaques, Bordas, Títulos) */
-    --cor-acento: #FFC72C; /* Amarelo Dourado (Acentos e Hover de Links) */
-    --cor-fundo: #ffffff; /* Branco (Fundo da Página) */
-    --cor-texto-claro: #ffffff; /* Branco (Texto no Cabeçalho/Rodapé) */
-    --cor-texto-escuro: #333333; /* Cinza Escuro (Texto Geral) */
+    --cor-principal: #000000; 
+    --cor-secundaria: #FF0000; 
+    --cor-acento: #FFC72C; 
+    --cor-fundo: #ffffff; 
+    --cor-texto-claro: #ffffff; 
+    --cor-texto-escuro: #333333; 
 }
 
 /* Base e Layout */
@@ -24,10 +25,11 @@ body {
     padding: 20px;
     display: flex;
     gap: 30px;
-    flex-wrap: wrap; /* Permite que as seções quebrem em telas menores */
+    flex-wrap: wrap; 
 }
 
 /* Cabeçalho */
+
 header {
     background-color: var(--cor-principal);
     color: var(--cor-texto-claro);
@@ -55,6 +57,7 @@ header h1 {
 }
 
 /* Navegação */
+
 nav#navegacao ul {
     list-style: none;
     text-transform: uppercase;
@@ -78,6 +81,7 @@ nav#navegacao a:hover {
 }
 
 /* Banner Principal */
+
 .hero-banner {
     width: 100%;
     overflow: hidden;
@@ -92,8 +96,9 @@ nav#navegacao a:hover {
 }
 
 /* Conteúdo Principal (Seções) */
+
 .secao-principal {
-    flex: 3; /* Ocupa mais espaço que a sidebar */
+    flex: 3; 
     min-width: 300px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -109,9 +114,9 @@ nav#navegacao a:hover {
 }
 
 /* Vídeo do YouTube */
+
 .video-container {
     overflow: hidden;
-    /* 16:9 Aspect Ratio */
     padding-top: 56.25%; 
     position: relative;
     margin-bottom: 30px;
@@ -129,6 +134,7 @@ nav#navegacao a:hover {
 }
 
 /* Planos */
+
 .plano-card {
     background-color: #f9f9f9;
     padding: 15px;
@@ -168,11 +174,12 @@ nav#navegacao a:hover {
     margin-top: 10px;
 }
 
-/* Sidebar / Calculadora */
+/* Calculadora */
+
 aside.calculadora {
-    flex: 1; /* Ocupa o espaço restante */
+    flex: 1; 
     min-width: 250px;
-    background-color: #eaf6ff; /* Fundo levemente azulado */
+    background-color: #eaf6ff; 
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -187,6 +194,7 @@ aside.calculadora h2 {
 }
 
 /* Formulário da Calculadora */
+
 #formIMC label {
     display: block;
     margin-top: 15px;
@@ -202,7 +210,7 @@ aside.calculadora h2 {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+    box-sizing: border-box; 
 }
 
 #formIMC button {
@@ -223,6 +231,7 @@ aside.calculadora h2 {
 }
 
 /* Resultado IMC */
+
 .resultado-box {
     margin-top: 25px;
     padding: 15px;
@@ -238,6 +247,7 @@ aside.calculadora h2 {
 }
 
 /* Rodapé */
+
 footer#contato {
     background-color: var(--cor-principal);
     color: var(--cor-texto-claro);
@@ -267,10 +277,10 @@ footer#contato {
     margin-top: 15px;
 }
 
-/* Media Queries para Responsividade */
+/* Media para responsividade */
 @media (max-width: 900px) {
     .container {
-        flex-direction: column; /* Empilha as seções e a calculadora */
+        flex-direction: column; 
     }
 
     .secao-principal, aside.calculadora {
@@ -297,29 +307,30 @@ footer#contato {
 
 @media (max-width: 500px) {
     nav#navegacao ul {
-        flex-direction: column; /* Links da nav em coluna no mobile */
+        flex-direction: column; 
         gap: 8px;
         align-items: center;
     }
 }
 
 /* Estilos do Carrossel */
+
 .carousel-container {
     width: 100%;
-    overflow: hidden; /* Esconde os slides que estão fora de vista */
+    overflow: hidden; 
     position: relative;
     border-top: 4px solid var(--cor-secundaria);
 }
 
 .carousel-track {
-    display: flex; /* Coloca todos os slides lado a lado */
-    transition: transform 0.5s ease-in-out; /* Define a animação de deslizar */
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
 }
 
 .carousel-slide {
-    min-width: 100%; /* Cada slide ocupa 100% da largura do container */
+    min-width: 100%; 
     box-sizing: border-box;
-    flex-shrink: 0; /* Impede que o slide encolha */
+    flex-shrink: 0; 
 }
 
 .carousel-slide img {
@@ -344,7 +355,7 @@ footer#contato {
     height: 12px;
     width: 12px;
     margin: 0 4px;
-    background-color: rgba(255, 255, 255, 0.5); /* Branco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -352,6 +363,6 @@ footer#contato {
 }
 
 .dot.active {
-    background-color: var(--cor-secundaria); /* Vermelho do Flamengo */
+    background-color: var(--cor-secundaria); 
     transform: scale(1.2);
 }
