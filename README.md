@@ -49,4 +49,4 @@ Para visualizar e testar o projeto em seu ambiente local ou via GitHub Pages, si
 Link para o site: 
 
 ```bash
-git clone [INSIRA A URL DO SEU REPOSITÓRIO AQUI]
+[Link do site: https://paulovinicius-dev.github.io/Projeto-Final/
