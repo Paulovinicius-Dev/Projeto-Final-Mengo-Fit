@@ -396,7 +396,7 @@ footer#contato {
 /* Ajuste para responsividade em telsa menores (Celulares) */
 @media (max-width: 600px) {
     .carousel-container {
-        height: 200px; 
+        height: 180px; 
     }
 }
 
